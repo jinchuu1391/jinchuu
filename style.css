@@ -13,7 +13,6 @@
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
-  --color-back-black: rgba(1, 1, 1, 0.95);
 
   /* Font size */
   --font-large: 48px;
@@ -26,6 +25,12 @@
   --weight-bold: 800;
   --weight-semi-bold: 700;
   --weight-regular: 400;
+
+  /* Size */
+  --border-radius-size: 4px;
+
+  /* Animation */
+  --animation-duration: 300ms;
 }
 
 /* Typography */
@@ -58,13 +63,14 @@ p {
   margin: 4px 0;
 }
 
+/* Universal tags */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Nanum Gothic", sans-serif;
-}
-
-* {
-  border-radius: 4px;
 }
 
 a {
@@ -84,9 +90,16 @@ button {
   border: none;
 }
 
+section {
+  text-align: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
 /* navbar */
 #navbar {
-  background: var(--color-back-black);
+  background: var(--color-black);
   display: flex;
   justify-content: space-between;
   padding: 10px;
@@ -114,6 +127,7 @@ button {
   padding: 10px;
   cursor: pointer;
   margin: 0 4px;
+  border-radius: var(--border-radius-size);
 }
 
 .navbar__menu__item.active {
@@ -128,6 +142,7 @@ button {
   background: url(images/homeBackground.jpg) center/cover no-repeat;
   padding: 40px;
   text-align: center;
+  max-width: 100%;
 }
 
 .home__avatar {
@@ -149,5 +164,58 @@ button {
   margin: 10px;
   padding: 8px;
   border: 2px solid var(--color-white);
-  border-radius: 5px;
+  border-radius: var(--border-radius-size);
+}
+
+.home__contact:hover {
+  background-color: var(--color-dark-pink);
+}
+
+.about__skills {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.skill {
+  width: 280px;
+}
+
+.skill_icon {
+  margin: auto;
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  font-size: 70px;
+  border: 1px var(--color-blue) solid;
+  border-radius: 50%;
+  color: var(--color-blue);
+}
+
+.skill_icon:hover i {
+  color: var(--color-pink);
+  transform: scale(1.1);
+  transition: all var(--animation-duration) ease;
+}
+
+.skill__title,
+.skill__description {
+  color: var(--color-dark-grey);
+}
+
+.education {
+  display: flex;
+  justify-content: center;
+}
+
+.education__name,
+.education__subName {
+  text-align: left;
+  padding-left: 30px;
+  color: var(--color-dark-grey);
+}
+
+.education__period {
+  color: var(--color-dark-grey);
+  font-size: var(--font-small);
 }

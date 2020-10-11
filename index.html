@@ -35,123 +35,133 @@
       </ul>
     </nav>
     <section id="home">
-      <img src="images/dummyProfile.jpg" alt="profile" class="home__avatar" />
-      <h1 class="home__title">Welcome :D</h1>
-      <h2 class="home__description">
-        개발자 박진수의 포트폴리오 사이트 입니다. 꾸준히 성장하는 개발자를 꿈
-        꿉니다.
-      </h2>
-      <button class="home__contact">Contact me</button>
+      <div class="section__container">
+        <img src="images/dummyProfile.jpg" alt="profile" class="home__avatar" />
+        <h1 class="home__title">Park Jin Soo</h1>
+        <h2 class="home__description">
+          개발자 박진수의 포트폴리오 입니다.
+          꾸준히 성장하는 개발자를 꿈 꿉니다.
+        </h2>
+        <button class="home__contact">Contact me</button>
+      </div>
     </section>
     <section id="about">
-      <h1>About me</h1>
-      <p>
-        부트캠프 코드스테이츠를 통해 자바스크립트를 이용한 풀스택 개발의
-        전반적인 요소를 공부했습니다.<br />수료 이후 프로젝트와 알고리즘 학습을
-        통해 개발 지식을 쌓고 있습니다.
-      </p>
-      <div class="about__skills">
-        <div class="skill">
-          <div class="skill_icon">
-            <i class="fab fa-html5"></i>
+      <div class="section__container">
+        <h1>About me</h1>
+        <p>
+          부트캠프 코드스테이츠를 통해 자바스크립트를 이용한 풀스택 개발의
+          전반적인 요소를 공부했습니다.<br />수료 이후 프로젝트와 알고리즘 학습을
+          통해 개발 지식을 쌓고 있습니다.
+        </p>
+        <div class="about__skills">
+          <div class="skill">
+            <div class="skill_icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <h2 class="skill__title">Front-end</h2>
+            <div class="skill__description">React, JavaScript, HTML, CSS</div>
           </div>
-          <h2 class="skill__title">Front-end</h2>
-          <div class="skill__description">React, JavaScript, HTML, CSS</div>
-        </div>
-        <div class="skill">
-          <div class="skill_icon">
-            <i class="fas fa-database"></i>
+          <div class="skill">
+            <div class="skill_icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h2 class="skill__title">Back-end</h2>
+            <div class="skill__description">
+              Node.js Express, Sequelize, MySQL
+            </div>
           </div>
-          <h2 class="skill__title">Back-end</h2>
-          <div class="skill__description">
-            Node.js Express, Sequelize, MySQL
+          <div class="skill">
+            <div class="skill_icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h2 class="skill__title">Others</h2>
+            <div class="skill__description">Git, AWS</div>
           </div>
         </div>
-        <div class="skill">
-          <div class="skill_icon">
-            <i class="fas fa-tools"></i>
+        <div class="education">
+          <div class="education__icon">
+            <a
+              href="https://www.notion.so/Code-States-FAQ-5b7530659f4143a6b171b232b3058f88#e1b4093a9ad948938c450d28a6da42b6"
+              title="코드스테이츠 소개 노션 페이지"
+              target="_black"
+            >
+              <img
+                src="images/codestates_logo.png"
+                alt="codestates"
+                class="education__logo"
+                width="100"
+              />
+            </a>
+            <p class="education__period">2020.5 - 2020.9</p>
           </div>
-          <h2 class="skill__title">Others</h2>
-          <div class="skill__description">Git, AWS</div>
-        </div>
-      </div>
-      <div class="education">
-        <div class="education__icon">
-          <a
-            href="https://www.notion.so/Code-States-FAQ-5b7530659f4143a6b171b232b3058f88#e1b4093a9ad948938c450d28a6da42b6"
-            title="코드스테이츠 소개 노션 페이지"
-            target="_black"
-          >
-            <img
-              src="images/codestates_logo.png"
-              alt="codestates"
-              class="education__logo"
-              width="100"
-            />
-          </a>
-          <p class="education__period">2020.5 - 2020.9</p>
-        </div>
-        <div class="education__description">
-          <p class="education__name">코드스테이츠(Code States)</p>
-          <p class="education__subName">
-            Advance software engineering, Immersive program (21th)
-          </p>
+          <div class="education__description">
+            <p class="education__name">코드스테이츠(Code States)</p>
+            <p class="education__subName">
+              Advance software engineering, Immersive program (21th)
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <section id="projects">
-      <h1>Projects</h1>
-      <div class="projects__projects">
-        <!--프로젝트 완성되면 href 값을 프로젝트 깃허브 주소로 변경하기-->
+      <div class="section__container">
+        <h1>Projects</h1>
+        <div class="projects__projects">
+          <!--프로젝트 완성되면 href 값을 프로젝트 깃허브 주소로 변경하기-->
+          <div class="project">
+            <a
+              href="https://github.com/jinchuu1391"
+              target="_blank"
+            >
+            <!--프로젝트 완성시 src 값을 프로젝트 스크린샷 이미지로 변경하기-->
+              <img
+                src="images/dummyProject.jpg"
+                alt="myProject"
+                class="project__img"
+              />
+            </a>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, facilis quod beatae odio voluptatibus natus sequi voluptates quos velit assumenda commodi quas aliquid nesciunt voluptate officia maxime quisquam iusto dolorem.</p>
+        </div>
         <div class="project">
           <a
             href="https://github.com/jinchuu1391"
             target="_blank"
           >
-          <!--프로젝트 완성시 src 값을 프로젝트 스크린샷 이미지로 변경하기-->
+            <!--프로젝트 완성시 src 값을 프로젝트 스크린샷 이미지로 변경하기-->
             <img
               src="images/dummyProject.jpg"
               alt="myProject"
               class="project__img"
             />
           </a>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, facilis quod beatae odio voluptatibus natus sequi voluptates quos velit assumenda commodi quas aliquid nesciunt voluptate officia maxime quisquam iusto dolorem.</p>
-      </div>
-      <div class="project">
-        <a
-          href="https://github.com/jinchuu1391"
-          target="_blank"
-        >
-          <!--프로젝트 완성시 src 값을 프로젝트 스크린샷 이미지로 변경하기-->
-          <img
-            src="images/dummyProject.jpg"
-            alt="myProject"
-            class="project__img"
-          />
-        </a>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis a aut nulla quam aliquam vitae officia animi qui numquam doloremque laboriosam voluptatum illo iure eaque, magni, reprehenderit adipisci dolore eligendi.</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis a aut nulla quam aliquam vitae officia animi qui numquam doloremque laboriosam voluptatum illo iure eaque, magni, reprehenderit adipisci dolore eligendi.</p>
+        </div>
       </div>
     </section>
     <section id="contact">
-      <h1>Contact</h1>
-      <h2>jinchuu1391@gmail.com</h2>
-      <div class="contact__links">
-        <a href="https://github.com/jinchuu1391" target="_blank">
-          <img src="images/github.png" alt="github" class="github" width="50" />
-        </a>
-        <a href="https://jinchuu1391.tistory.com" target="_blank">
-          <img
-            src="images/tistory.png"
-            alt="tistory"
-            class="tistory"
-            width="50"
-          />
-        </a>
-        (github) icon made by
-        <a href="http://fontawesome.io/" title="Dave Gandy">Dave Gandy</a> from
-        <a href="https://www.flaticon.com/kr/" title="Flaticon">
-          www.flaticon.com</a
-        >
+      <div class="section__container">
+        <h1>Let's talk!</h1>
+        <h2>jinchuu1391@gmail.com</h2>
+        <div class="contact__links">
+          <a href="https://github.com/jinchuu1391" target="_blank">
+            <img src="images/github.png" alt="github" class="link" width="50" />
+          </a>
+          <a href="https://jinchuu1391.tistory.com" target="_blank">
+            <img
+              src="images/tistory.png"
+              alt="tistory"
+              class="link"
+              width="50"
+            />
+          </a>
+        </div>
+            <div class="flaticon">
+              (github) icon made by
+              <a href="http://fontawesome.io/" title="Dave Gandy">Dave Gandy</a> from
+              <a href="https://www.flaticon.com/kr/" title="Flaticon">
+                www.flaticon.com</a
+              >
+            </div>
       </div>
     </section>
   </body>

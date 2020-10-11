@@ -90,32 +90,35 @@ button {
   border: none;
 }
 
-section {
+.section__container {
   text-align: center;
   padding: 50px;
   max-width: 1200px;
   margin: auto;
+  border-bottom: 1px solid var(--color-light-white);
 }
 
 /* navbar */
 #navbar {
-  background: var(--color-black);
+  /* background: var(--color-black); */
   display: flex;
   justify-content: space-between;
-  padding: 10px;
-  color: var(--color-white);
+  padding: 10px 100px;
+  /* color: var(--color-white); */
   align-items: center;
 }
 
 .navbar__logo {
   display: flex;
   align-items: center;
+  color: var(--color-dark-grey);
   font-weight: var(--weight-bold);
   font-size: var(--font-medium);
 }
 
 .navbar__logo a {
   padding-left: 5px;
+  color: var(--color-dark-grey);
 }
 
 .navbar__menu {
@@ -128,18 +131,22 @@ section {
   cursor: pointer;
   margin: 0 4px;
   border-radius: var(--border-radius-size);
-}
-
-.navbar__menu__item.active {
-  border: 1px solid var(--color-white);
-}
-
-.navbar__menu__item:hover {
+  color: var(--color-white);
   background-color: var(--color-dark-grey);
 }
 
+.navbar__menu__item.active {
+  /* border: 1px solid var(--color-white); */
+  background-color: var(--color-dark-grey);
+}
+
+.navbar__menu__item:hover {
+  background-color: var(--color-light-grey);
+}
+
 #home {
-  background: url(images/homeBackground.jpg) center/cover no-repeat;
+  /* background: url(images/homeBackground.jpg) center/cover no-repeat; */
+  /* background-color: var(--color-black); */
   padding: 40px;
   text-align: center;
   max-width: 100%;
@@ -149,26 +156,26 @@ section {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  border: 2px solid var(--color-light-white);
+  /* border: 2px solid var(--color-light-white); */
 }
 
-.home__title,
 .home__description {
-  color: var(--color-white);
+  color: var(--color-dark-grey);
 }
 
 .home__contact {
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
   color: var(--color-white);
-  margin: 10px;
+  background-color: var(--color-dark-grey);
+  margin: 30px 10px 10px 10px;
   padding: 8px;
-  border: 2px solid var(--color-white);
+  border: 2px solid var(--color-dark-grey);
   border-radius: var(--border-radius-size);
 }
 
 .home__contact:hover {
-  background-color: var(--color-dark-pink);
+  background-color: var(--color-light-grey);
 }
 
 .about__skills {
@@ -220,6 +227,15 @@ section {
   font-size: var(--font-small);
 }
 
+#projects {
+  /* background-color: var(--color-light-white); */
+  /* background-color: var(--color-black); */
+}
+
+#projects h1 {
+  /* color: var(--color-white); */
+}
+
 .projects__projects {
   display: flex;
   flex-direction: column;
@@ -229,6 +245,8 @@ section {
 .project__img {
   width: 300px;
   margin: 15px 0;
+  /* border: 1px solid var(--color-white); */
+  border-radius: var(--border-radius-size);
 }
 
 .project {
@@ -238,4 +256,21 @@ section {
 .project p {
   margin: 16px 0 0 30px;
   text-align: left;
+  color: var(--color-dark-grey);
+  /* color: var(--color-white); */
+}
+
+#contact {
+  /* background: url(images/contactBackground.jpg) center no-repeat; */
+}
+
+.contact__links {
+  margin: 30px;
+  color: var(--color-black);
+  font-size: var(--font-large);
+}
+
+.flaticon,
+.flaticon a {
+  color: var(--color-dark-grey);
 }

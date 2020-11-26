@@ -45,21 +45,21 @@ h1 {
 h2 {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
-  color: var(--color-black);
+  color: var(--color-dark-grey);
   margin: 8px 0;
 }
 
 h3 {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
-  color: var(--color-black);
+  color: var(--color-dark-grey);
   margin: 8px 0;
 }
 
 p {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
-  color: var(--color-black);
+  color: var(--color-dark-grey);
   margin: 4px 0;
 }
 
@@ -149,7 +149,7 @@ button {
   /* background-color: var(--color-black); */
   padding: 40px;
   text-align: center;
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 .home__avatar {

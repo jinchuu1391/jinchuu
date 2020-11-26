@@ -27,12 +27,17 @@
         <i class="fas fa-star"></i>
         <a href="#">jinsoo</a>
       </div>
-      <ul class="navbar__menu">
-        <li class="navbar__menu__item active">Home</li>
-        <li class="navbar__menu__item">About</li>
-        <li class="navbar__menu__item">Projects</li>
-        <li class="navbar__menu__item">Contact</li>
-      </ul>
+      <div class="navbar__menu">
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item active">Home</li>
+          <li class="navbar__menu__item">About</li>
+          <li class="navbar__menu__item">Projects</li>
+          <li class="navbar__menu__item">Contact</li>
+        </ul>
+      </div>
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
     <section id="home">
       <div class="section__container">
@@ -50,8 +55,7 @@
         <h1>About me</h1>
         <p>
           부트캠프 코드스테이츠를 통해 자바스크립트를 이용한 풀스택 개발의
-          전반적인 요소를 공부했습니다.<br />수료 이후 프로젝트와 알고리즘 학습을
-          통해 개발 지식을 쌓고 있습니다.
+          기본적인 요소를 공부했습니다. 수료 후 블로깅, 프로젝트를 하며 부족한 부분들을 채우고 있습니다. 꾸준히 성장하는 개발자를 꿈 꿉니다.
         </p>
         <div class="about__skills">
           <div class="skill">
@@ -67,7 +71,7 @@
             </div>
             <h2 class="skill__title">Back-end</h2>
             <div class="skill__description">
-              Node.js Express, Sequelize, MySQL
+              Node.js, Express, Sequelize, MySQL
             </div>
           </div>
           <div class="skill">
@@ -110,12 +114,12 @@
           <!--프로젝트 완성되면 href 값을 프로젝트 깃허브 주소로 변경하기-->
           <div class="project">
             <a
-              href="https://github.com/jinchuu1391"
+              href="http://thankslog-frontend.s3-website.ap-northeast-2.amazonaws.com/"
               target="_blank"
             >
             <!--프로젝트 완성시 src 값을 프로젝트 스크린샷 이미지로 변경하기-->
               <img
-                src="images/dummyProject.jpg"
+                src="images/thankslog.png"
                 alt="myProject"
                 class="project__img"
               />
@@ -124,12 +128,12 @@
         </div>
         <div class="project">
           <a
-            href="https://github.com/jinchuu1391"
+            href="https://play.google.com/store/apps/details?id=com.dosiin.dosiinana"
             target="_blank"
           >
             <!--프로젝트 완성시 src 값을 프로젝트 스크린샷 이미지로 변경하기-->
             <img
-              src="images/dummyProject.jpg"
+              src="images/dosiin.png"
               alt="myProject"
               class="project__img"
             />

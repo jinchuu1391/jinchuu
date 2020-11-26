@@ -90,21 +90,24 @@ button {
   border: none;
 }
 
+section {
+  border-bottom: 1px solid var(--color-light-white);
+}
+
 .section__container {
   text-align: center;
   padding: 50px;
   max-width: 1200px;
   margin: auto;
-  border-bottom: 1px solid var(--color-light-white);
 }
 
 /* navbar */
 #navbar {
-  /* background: var(--color-black); */
+  position: fixed;
   display: flex;
+  width: 100%;
   justify-content: space-between;
-  padding: 10px 100px;
-  /* color: var(--color-white); */
+  padding: 0px 50px;
   align-items: center;
 }
 
@@ -114,6 +117,7 @@ button {
   color: var(--color-dark-grey);
   font-weight: var(--weight-bold);
   font-size: var(--font-medium);
+  opacity: 85%;
 }
 
 .navbar__logo a {
@@ -129,25 +133,36 @@ button {
   font-weight: var(--weight-bold);
   padding: 10px;
   cursor: pointer;
-  margin: 0 4px;
+  margin: 1px 4px;
   border-radius: var(--border-radius-size);
   color: var(--color-white);
   background-color: var(--color-dark-grey);
+  opacity: 85%;
 }
 
 .navbar__menu__item.active {
-  /* border: 1px solid var(--color-white); */
-  background-color: var(--color-dark-grey);
+  /* border: 5px solid var(--color-dark-white); */
+  background-color: var(--color-dark-pink);
 }
 
 .navbar__menu__item:hover {
   background-color: var(--color-light-grey);
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 15px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-dark-grey);
+  display: none;
+}
+
 #home {
   /* background: url(images/homeBackground.jpg) center/cover no-repeat; */
   /* background-color: var(--color-black); */
   padding: 40px;
+  padding-top: 80px;
   text-align: center;
   /* max-width: 100%; */
 }
@@ -181,11 +196,13 @@ button {
 .about__skills {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 80px 0;
 }
 
 .skill {
   width: 280px;
+  margin: 5px 0;
 }
 
 .skill_icon {
@@ -251,6 +268,7 @@ button {
 
 .project {
   display: flex;
+  /* justify-content: center; */
 }
 
 .project p {
@@ -273,4 +291,26 @@ button {
 .flaticon,
 .flaticon a {
   color: var(--color-dark-grey);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .about__skills {
+    flex-direction: column;
+  }
+  .project {
+    flex-direction: column;
+  }
 }

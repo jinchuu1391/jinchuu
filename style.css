@@ -3,16 +3,11 @@
   /* Color */
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
-  --color-dark-white: #bdbdbd;
   --color-pink: #fe918d;
   --color-dark-pink: #ff6863;
   --color-dark-grey: #4d4d4d;
-  --color-grey: #616161;
   --color-light-grey: #7c7979;
   --color-blue: #73aace;
-  --color-yellow: #fff7d1;
-  --color-orange: #feb546;
-  --color-black: #000000;
 
   /* Font size */
   --font-large: 48px;
@@ -42,27 +37,6 @@ h1 {
   margin: 16px 0 50px 0;
 }
 
-h2 {
-  font-size: var(--font-medium);
-  font-weight: var(--weight-semi-bold);
-  color: var(--color-dark-grey);
-  margin: 8px 0;
-}
-
-h3 {
-  font-size: var(--font-regular);
-  font-weight: var(--weight-regular);
-  color: var(--color-dark-grey);
-  margin: 8px 0;
-}
-
-p {
-  font-size: var(--font-regular);
-  font-weight: var(--weight-regular);
-  color: var(--color-dark-grey);
-  margin: 4px 0;
-}
-
 /* Universal tags */
 * {
   box-sizing: border-box;
@@ -81,6 +55,10 @@ a {
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+p {
+  color: var(--color-dark-grey);
 }
 
 button {
@@ -103,26 +81,27 @@ section {
 
 /* navbar */
 #navbar {
+  background-color: var(--color-dark-grey);
   position: fixed;
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 10px 50px;
+  padding: 0px 50px;
   align-items: center;
+  z-index: 1;
 }
 
 .navbar__logo {
   display: flex;
   align-items: center;
-  color: var(--color-dark-grey);
+  color: var(--color-white);
   font-weight: var(--weight-bold);
   font-size: var(--font-medium);
-  opacity: 85%;
 }
 
 .navbar__logo a {
   padding-left: 5px;
-  color: var(--color-dark-grey);
+  color: var(--color-white);
 }
 
 .navbar__menu {
@@ -131,29 +110,28 @@ section {
 
 .navbar__menu__item {
   font-weight: var(--weight-bold);
-  padding: 10px;
+  padding: 5px 10px;
   cursor: pointer;
-  margin: 1px 4px;
+  margin: 0px 4px;
   border-radius: var(--border-radius-size);
   color: var(--color-white);
   background-color: var(--color-dark-grey);
-  opacity: 85%;
 }
 
-.navbar__menu__item.active {
+.navbar__menu__item.onScroll {
   background-color: var(--color-dark-pink);
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-light-grey);
+  background-color: var(--color-dark-pink);
 }
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 14px;
+  top: 20px;
   right: 32px;
   font-size: 24px;
-  color: var(--color-light-grey);
+  color: var(--color-white);
   display: none;
 }
 
@@ -161,7 +139,6 @@ section {
   padding: 40px;
   padding-top: 80px;
   text-align: center;
-  /* max-width: 100%; */
 }
 
 .home__avatar {
@@ -181,20 +158,11 @@ section {
   background-color: var(--color-dark-grey);
   margin: 30px 10px 10px 10px;
   padding: 8px;
-  border: 2px solid var(--color-dark-grey);
   border-radius: var(--border-radius-size);
 }
 
 .home__contact:hover {
-  background-color: var(--color-light-grey);
-}
-
-.home__onScroll {
-  opacity: 50%;
-  transition: all var(--animation-duration) ease-in-out;
-}
-
-#about {
+  background-color: var(--color-dark-pink);
 }
 
 .about__skills {
@@ -248,10 +216,18 @@ section {
   font-size: var(--font-small);
 }
 
-#projects {
+#projects ul {
+  list-style-type: disc;
+  text-align: left;
+}
+
+#projects ul li {
+  line-height: 25px;
+  color: var(--color-dark-grey);
 }
 
 #projects h1 {
+  margin-bottom: 20px;
 }
 
 .projects__projects {
@@ -261,7 +237,7 @@ section {
 }
 
 .project__img {
-  width: 300px;
+  width: 250px;
   margin: 15px 0;
   border-radius: var(--border-radius-size);
 }
@@ -270,13 +246,24 @@ section {
   display: flex;
 }
 
+.project__description {
+  padding-top: 15px;
+  padding-left: 50px;
+}
+
+.project__description a {
+  color: var(--color-black);
+  text-decoration: underline;
+}
+
+.project__description a:hover {
+  color: var(--color-dark-pink);
+}
+
 .project p {
   margin: 16px 0 0 30px;
   text-align: left;
   color: var(--color-dark-grey);
-}
-
-#contact {
 }
 
 .contact__links {
@@ -297,12 +284,19 @@ section {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    padding: 15px;
   }
   .navbar__menu {
     flex-direction: column;
     text-align: center;
     width: 100%;
     display: none;
+  }
+  .navbar__menu__item {
+    padding-top: 10px;
+  }
+  .navbar__menu.open {
+    display: block;
   }
   .about__skills {
     flex-direction: column;

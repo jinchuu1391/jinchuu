@@ -142,9 +142,8 @@ section {
 }
 
 .home__avatar {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
+  width: 500px;
+  border-radius: 10px;
 }
 
 .home__description {
